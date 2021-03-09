@@ -93,7 +93,9 @@ namespace Lesson_4
         {
             int num = RandomNum();
 
-            yield return new object[] { new PointStruct { X = num }, new PointStruct { Y = num } };
+            yield return new object[] { new PointStruct { X = RandomNum() }, new PointStruct { Y = RandomNum() } };
+            yield return new object[] { new PointStruct { X = RandomNum() }, new PointStruct { Y = RandomNum() } };
+            yield return new object[] { new PointStruct { X = RandomNum() }, new PointStruct { Y = RandomNum() } };
         }
 
     }
